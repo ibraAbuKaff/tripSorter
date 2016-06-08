@@ -18,5 +18,5 @@ class Constants
     const FLIGHT_NR       = 'flightNr';
     const TRAIN_NR        = 'trainNr';
     const GATE            = 'gate';
-    
+
 }

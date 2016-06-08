@@ -24,6 +24,9 @@ class TicketSorter
         $this->sortedTickets = $sortedTickets;
     }
 
+    /**
+     * TicketSorter constructor.
+     */
     public function __construct()
     {
     }
@@ -37,7 +40,14 @@ class TicketSorter
     }
 
     /**
-     * @param mixed $tickets
+     * DESC
+     *
+     * @param $tickets
+     *
+     * @return $this
+     *
+     * @author Ibraheem Abu Kaff <eng.ibraheemabukaff@gmail.com>
+     *
      */
     public function setTickets($tickets)
     {
@@ -46,43 +56,49 @@ class TicketSorter
         return $this;
     }
 
-    public function sort()
+    /**
+     * DESC
+     *
+     * @return $this
+     *
+     * @author Ibraheem Abu Kaff <eng.ibraheemabukaff@gmail.com>
+     *
+     */
+    public function sortTickets()
     {
-        $tickets       = $this->getTickets();
-        $sortedTickets = [];
-        for ($i = 0; $i < count($tickets); $i++) {
-            for ($j = 0; $j < count($tickets); $j++) {
-                if ($i == $j) {
-                    continue;
+        $boardingCards = $this->getTickets();
+        $sorted        = [array_pop($boardingCards)];
+
+        while (count($boardingCards) > 0) {
+            foreach ($boardingCards as $key => $card) {
+
+                if (end($sorted)->{Constants::TO} === $card->{Constants::FROM}) {
+                    array_push($sorted, $card);
+                } elseif (reset($sorted)->{Constants::FROM} === $card->{Constants::TO}) {
+                    array_unshift($sorted, $card);
                 }
-                if ($tickets[$i]->{Constants::TO} == $tickets[$j]->{Constants::FROM}) {
-                    break;
-                } else {
-                    $lastTicket      = $tickets[$j];
-                    $sortedTickets[] = $lastTicket;
-                    foreach ($tickets as $key => $ticket) {
-                        if ($lastTicket->{Constants::FROM} == $ticket->{Constants::TO}) {
-                            $sortedTickets[] = $ticket;
-                            unset($tickets[$key]);
-                            $tickets = array_values($tickets);
-                        }
-                    }
-                    break;
-                }
+
+                unset($boardingCards[$key]);
             }
-
         }
-
-        $this->sortedTickets = array_reverse($sortedTickets);
+        $this->sortedTickets = $sorted;
 
         return $this;
     }
 
+    /**
+     * DESC
+     *
+     * @return string
+     *
+     * @author Ibraheem Abu Kaff <eng.ibraheemabukaff@gmail.com>
+     *
+     */
     public function printSortedTickets()
     {
         $t = '';
         foreach ($this->sortedTickets as $st) {
-            $t .= $st->getText() . "\\n";
+            $t .= $st->getText();
         }
 
         return $t;

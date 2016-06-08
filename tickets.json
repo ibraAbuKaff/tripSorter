@@ -1,21 +1,6 @@
 {
   "tickets": [
     {
-      "transportation": "bus",
-      "from": "Barcelona",
-      "to": "Gerona",
-      "seatNumber": ""
-    },
-    {
-      "transportation": "airplane",
-      "from": "Stockholm",
-      "to": "New York",
-      "flightNr": "78A",
-      "gate": "22",
-      "seatNumber": "7B",
-      "baggageCounter": ""
-    },
-    {
       "transportation": "airplane",
       "from": "Gerona",
       "to": "Stockholm",
@@ -25,11 +10,26 @@
       "baggageCounter": "344"
     },
     {
+      "transportation": "bus",
+      "from": "Barcelona",
+      "to": "Gerona",
+      "seatNumber": ""
+    },
+    {
       "transportation": "train",
       "trainNr": "49AE",
       "from": "Madrid",
       "to": "Barcelona",
       "seatNumber": "45B"
+    },
+    {
+      "transportation": "airplane",
+      "from": "Stockholm",
+      "to": "New York",
+      "flightNr": "78A",
+      "gate": "22",
+      "seatNumber": "7B",
+      "baggageCounter": ""
     }
   ]
 }

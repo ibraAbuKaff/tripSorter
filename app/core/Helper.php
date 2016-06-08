@@ -4,6 +4,17 @@ namespace app\core;
 
 class Helper
 {
+    /**
+     * DESC
+     *
+     * @param string $sourceFile
+     *
+     * @return mixed
+     * @throws \Exception
+     *
+     * @author Ibraheem Abu Kaff <eng.ibraheemabukaff@gmail.com>
+     *
+     */
     public static function readTicketsAsArray($sourceFile = '')
     {
         if (empty($sourceFile)) {

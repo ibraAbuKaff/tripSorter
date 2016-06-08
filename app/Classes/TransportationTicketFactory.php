@@ -9,6 +9,9 @@ class TransportationTicketFactory
     public $ticket;
     public $transportationInstance = null;
 
+    /**
+     * TransportationTicketFactory constructor.
+     */
     public function __construct()
     {
 
@@ -16,7 +19,12 @@ class TransportationTicketFactory
 
 
     /**
-     * @return string
+     * DESC
+     *
+     * @return mixed
+     *
+     * @author Ibraheem Abu Kaff <eng.ibraheemabukaff@gmail.com>
+     *
      */
     public function getTransportationType()
     {
@@ -24,13 +32,28 @@ class TransportationTicketFactory
     }
 
     /**
+     * DESC
+     *
      * @return mixed
+     *
+     * @author Ibraheem Abu Kaff <eng.ibraheemabukaff@gmail.com>
+     *
      */
     public function getTicket()
     {
         return $this->ticket;
     }
 
+    /**
+     * DESC
+     *
+     * @param $ticket
+     *
+     * @return $this
+     *
+     * @author Ibraheem Abu Kaff <eng.ibraheemabukaff@gmail.com>
+     *
+     */
     public function setTicket($ticket)
     {
         $this->ticket             = $ticket;
@@ -39,6 +62,15 @@ class TransportationTicketFactory
         return $this;
     }
 
+    /**
+     * DESC
+     *
+     * @return null
+     * @throws \Exception
+     *
+     * @author Ibraheem Abu Kaff <eng.ibraheemabukaff@gmail.com>
+     *
+     */
     public function create()
     {
         switch ($this->transportationType) {
@@ -61,7 +93,12 @@ class TransportationTicketFactory
     }
 
     /**
+     * DESC
+     *
      * @return null
+     *
+     * @author Ibraheem Abu Kaff <eng.ibraheemabukaff@gmail.com>
+     *
      */
     public function getTransportationInstance()
     {
@@ -69,13 +106,26 @@ class TransportationTicketFactory
     }
 
     /**
-     * @param null $transportationInstance
+     * DESC
+     *
+     * @param $transportationInstance
+     *
+     * @author Ibraheem Abu Kaff <eng.ibraheemabukaff@gmail.com>
+     *
      */
     public function setTransportationInstance($transportationInstance)
     {
         $this->transportationInstance = $transportationInstance;
     }
 
+    /**
+     * DESC
+     *
+     * @return null
+     *
+     * @author Ibraheem Abu Kaff <eng.ibraheemabukaff@gmail.com>
+     *
+     */
     public function assignTicketDynamically()
     {
         $transportationType = isset($this->ticket[Constants::TRANSPORTATION]) ? $this->ticket[Constants::TRANSPORTATION] : '';

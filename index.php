@@ -14,7 +14,8 @@ foreach ($tickets[Constants::TICKETS] as $ticket) {
 }
 
 $ticketsSorter = new TicketSorter();
-$sortedTickets = $ticketsSorter->setTickets($ticketObjects)->sort()->printSortedTickets();
+//$sortedTickets = $ticketsSorter->setTickets($ticketObjects)->sort()->printSortedTickets();
+$sortedTickets = $ticketsSorter->setTickets($ticketObjects)->sortTickets()->printSortedTickets();
 
 echo $sortedTickets;
 
