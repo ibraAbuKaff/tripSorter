@@ -9,6 +9,10 @@ We have ticket.json, there we have an array of un-ordered tickets(input to the a
 and you will get the ordered tickets with full description of tickets for example:
 Take train 49AE from Madrid to Barcelona. Sit in seat 45B
 
+OR to run the algorithm from terminal:
+```php index.php```
+
+
 Test:
 
 
