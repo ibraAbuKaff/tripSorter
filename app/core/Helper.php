@@ -5,7 +5,7 @@ namespace app\core;
 class Helper
 {
     /**
-     * DESC
+     * Read Tickets from the ticket.json and retrieve it as array of ticket data
      *
      * @param string $sourceFile
      *

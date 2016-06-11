@@ -17,7 +17,7 @@ class Bus extends BaseTransportation
     }
 
     /**
-     * DESC
+     * 
      *
      * @param $key
      *
@@ -32,7 +32,7 @@ class Bus extends BaseTransportation
     }
 
     /**
-     * DESC
+     *
      *
      * @param $key
      * @param $value
@@ -46,11 +46,11 @@ class Bus extends BaseTransportation
     }
 
     /**
-     * DESC
+     * Retrieve a related text we want to display after sorting the ticket
      *
      * @return string
      *
-     *@author Ibraheem Abu Kaff <eng.ibraheemabukaff@gmail.com>
+     * @author Ibraheem Abu Kaff <eng.ibraheemabukaff@gmail.com>
      *
      */
     public function getText()

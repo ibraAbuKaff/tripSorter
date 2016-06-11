@@ -4,7 +4,7 @@ namespace app\Classes\BaseClasses;
 interface BaseInterface
 {
     /**
-     * DESC
+     * 
      *
      * @return mixed
      *

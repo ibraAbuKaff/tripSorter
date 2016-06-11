@@ -3,6 +3,11 @@ namespace app\Classes;
 
 use app\Classes\BaseClasses\BaseTransportation;
 
+/**
+ * Class Airplane
+ *
+ * @package app\Classes
+ */
 class Airplane extends BaseTransportation
 {
     public        $AirplaneValues = ['flightNr', 'gate', 'baggageCounter'];
@@ -17,7 +22,7 @@ class Airplane extends BaseTransportation
     }
 
     /**
-     * DESC
+     *
      *
      * @param $key
      *
@@ -32,7 +37,7 @@ class Airplane extends BaseTransportation
     }
 
     /**
-     * DESC
+     * 
      *
      * @param $key
      * @param $value
@@ -46,7 +51,7 @@ class Airplane extends BaseTransportation
     }
 
     /**
-     * DESC
+     * Retrieve a related text we want to display after sorting the ticket
      *
      * @return string
      *

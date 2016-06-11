@@ -7,7 +7,7 @@ abstract class BaseTransportation implements BaseInterface
     protected $values = ['from', 'to', 'seatNumber', 'transportation'];
 
     /**
-     * DESC
+     *
      *
      * @param $key
      *
@@ -22,7 +22,7 @@ abstract class BaseTransportation implements BaseInterface
     }
 
     /**
-     * DESC
+     * 
      *
      * @param $key
      * @param $value

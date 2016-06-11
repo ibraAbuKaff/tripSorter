@@ -1,8 +1,14 @@
 <?php
 namespace app\Classes;
 
+use app\Classes\BaseClasses\BaseTransportation;
 use app\core\Constants;
 
+/**
+ * Class TicketSorter
+ *
+ * @package app\Classes
+ */
 class TicketSorter
 {
     public $tickets;
@@ -40,7 +46,8 @@ class TicketSorter
     }
 
     /**
-     * DESC
+     *
+     * Set Tickets
      *
      * @param $tickets
      *
@@ -57,7 +64,7 @@ class TicketSorter
     }
 
     /**
-     * DESC
+     * Sorting the tickets
      *
      * @return $this
      *
@@ -87,7 +94,7 @@ class TicketSorter
     }
 
     /**
-     * DESC
+     * print sorted tickets
      *
      * @return string
      *
@@ -97,6 +104,7 @@ class TicketSorter
     public function printSortedTickets()
     {
         $t = '';
+        /** @var BaseTransportation $st */
         foreach ($this->sortedTickets as $st) {
             $t .= $st->getText();
         }

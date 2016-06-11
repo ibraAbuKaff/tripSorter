@@ -3,6 +3,11 @@ namespace app\Classes;
 
 use app\Classes\BaseClasses\BaseTransportation;
 
+/**
+ * Class Train
+ *
+ * @package app\Classes
+ */
 class Train extends BaseTransportation
 {
     public        $TrainValues = ['trainNr'];
@@ -14,7 +19,7 @@ class Train extends BaseTransportation
     }
 
     /**
-     * DESC
+     *
      *
      * @param $key
      *
@@ -29,7 +34,7 @@ class Train extends BaseTransportation
     }
 
     /**
-     * DESC
+     *
      *
      * @param $key
      * @param $value
@@ -43,7 +48,7 @@ class Train extends BaseTransportation
     }
 
     /**
-     * DESC
+     * Retrieve a related text we want to display after sorting the ticket
      *
      * @return string
      *

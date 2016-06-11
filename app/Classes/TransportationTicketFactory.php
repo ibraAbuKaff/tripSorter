@@ -3,6 +3,11 @@ namespace app\Classes;
 
 use app\core\Constants;
 
+/**
+ * Class TransportationTicketFactory
+ *
+ * @package app\Classes
+ */
 class TransportationTicketFactory
 {
     public $transportationType;
@@ -19,7 +24,7 @@ class TransportationTicketFactory
 
 
     /**
-     * DESC
+     * Get Transportation Type
      *
      * @return mixed
      *
@@ -32,7 +37,7 @@ class TransportationTicketFactory
     }
 
     /**
-     * DESC
+     * Retrieve a ticket
      *
      * @return mixed
      *
@@ -45,7 +50,7 @@ class TransportationTicketFactory
     }
 
     /**
-     * DESC
+     * Set a ticket
      *
      * @param $ticket
      *
@@ -63,7 +68,7 @@ class TransportationTicketFactory
     }
 
     /**
-     * DESC
+     * create a new instance according to the type of transportation using factory method
      *
      * @return null
      * @throws \Exception
@@ -93,7 +98,7 @@ class TransportationTicketFactory
     }
 
     /**
-     * DESC
+     * Get Transportation Instance
      *
      * @return null
      *
@@ -106,7 +111,7 @@ class TransportationTicketFactory
     }
 
     /**
-     * DESC
+     * Set Transportation Instance
      *
      * @param $transportationInstance
      *
@@ -119,7 +124,7 @@ class TransportationTicketFactory
     }
 
     /**
-     * DESC
+     * Assign the ticket data dynamically
      *
      * @return null
      *
