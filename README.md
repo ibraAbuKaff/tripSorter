@@ -1,4 +1,8 @@
 # TripSorter
+
+First of all run ``composer install`` as im using PHPUNIT test library, then ``composer dump-autoload -o``
+
+
 Algorithm:
 
 We have ticket.json, there we have an array of un-ordered tickets(input to the algorithm) to order it, just access the ``index.php``
